@@ -35,7 +35,8 @@ def train_model(features, labels):
     #estimator = linear_model.LogisticRegression()
 
     # Set up multi-class classifier
-    multi_label_classifier = multiclass.OneVsRestClassifier(estimator)
+    #multi_label_classifier = multiclass.OneVsRestClassifier(estimator)
+    multi_label_classifier = multiclass.OneVsOneClassifier(estimator)
 
     X_train, X_test, y_train, y_test = \
         cross_validation.train_test_split(features, labels, test_size=0.7, random_state=0)
