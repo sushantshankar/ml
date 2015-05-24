@@ -1,7 +1,6 @@
-* Simplest: One vs. Rest classifier using Linear SVM *
+Simplest: One vs. Rest classifier using Linear SVM
 
-This gets results
-```python rules_extractor.py
+```
 Classification accuracy on training data: 0.501429
              precision    recall  f1-score   support
 
